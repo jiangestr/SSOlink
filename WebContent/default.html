@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="assets/js/jquery-1.10.2.js"></script>
+</head>
+<body>
+<iframe id="IFeditValue" src="blank.html"  scrolling="auto" height="800" width="1000"></iframe>
+</body>
+<script type="text/javascript">
+window.onload=function()
+{
+//var img = document.frames["IFeditValue"].document.getElementById('editValue');
+var i=$("#IFeditValue").contents().find("#editValue").html();
+alert(i);
+//var txt = document.getElementById('#IFeditValue').contentWindow.document;
+}
+</script>
+</html>
